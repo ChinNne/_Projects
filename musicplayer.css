@@ -1,0 +1,150 @@
+.playfair-display-playfairfont{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.page_body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.song_name {
+    font-size: 20px;
+}
+
+.artist_name {
+    font-size: 12px;
+}
+
+.song_name, .artist_name, .current_time, .song_duration {
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+.song_info {
+    padding-left: 5px;
+}
+
+.current_time, .song_duration {
+    font-size: 15px;
+    text-align: center;
+    line-height: 23px;
+}
+
+.album_cover {
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: -46vh;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.slider_container {
+    display: inline-grid;
+    grid-template-columns: 3% 96% 3%;
+    position: relative;
+    bottom: -48vh;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.miscellaneous {
+    display: grid;
+    grid-template-columns: 52% 29%;
+    position: relative;
+    bottom: -49vh;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.info_like {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons_volume {
+    display: grid;
+    grid-template-columns: 90% 40%;
+}
+
+.material-icons {
+    font-size: 30px;
+}
+
+.like {
+    flex-grow: 0.05;
+    margin-left: 20px;
+    align-self: center;
+}
+
+.previous, .skip, .play_pause, .shuffle {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*.material-icons {*/
+/*    font-size: 48px;*/
+/*    color: white;*/
+/*}*/
+
+.material-icons {
+    color: lightgray;
+    transition: color 100ms;
+    cursor: pointer;
+}
+
+.material-icons:hover {
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.volume_container {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    align-items: center;
+}
+
+.seek_slider {
+    font-size: 4.5rem;
+    width: 18.05em;
+    align-items: center;
+}
+
+.volume_slider {
+    font-size: 1.5rem;
+    width: 9.4em;
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+}
+
+.volume_slider, .seek_slider {
+    appearance: none;
+    height: 3px;
+    border-radius: 30px;
+}
+
+.volume_slider::-webkit-slider-thumb, .seek_slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    cursor: pointer;
+}

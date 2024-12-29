@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="musicplayer.css">
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+</head>
+<body class="page_body">
+    <audio></audio>
+    <div class="big_container">
+        <div class="album_cover" style="background-size:cover"></div>
+        <div class="slider_container">
+            <div class="current_time">0:00</div>
+            <label>
+                <input type="range" min="0" max="" step="any" class="seek_slider"
+                       onchange="seekTo()">
+            </label>
+            <div class="song_duration">0:00</div>
+        </div>
+        <div class="miscellaneous">
+            <div class="info_like">
+                <div class="song_info">
+                    <div class="song_name">Must Be Love</div>
+                    <div class="artist_name">Laufey</div>
+                </div>
+                <div class="like" onclick="likeSong()">
+                    <i class="material-icons" style="color: #f30c46; font-size: 24px">
+                        favorite_border
+                    </i>
+                </div>
+            </div>
+            <div class="buttons_volume">
+                <div class="buttons" style="">
+                    <div class="previous" onclick="prevSong()">
+                        <i class="material-icons" style="font-size: 30px">
+                            skip_previous
+                        </i>
+                    </div>
+                    <div class="play_pause" onclick="playpauseSong()">
+                        <i class="material-icons" style="font-size: 60px; opacity: 1">
+                            play_circle_filled
+                        </i>
+                    </div>
+                    <div class="skip" onclick="skipSong()">
+                        <i class="material-icons" style="font-size: 30px">
+                            skip_next
+                        </i>
+                    </div>
+                    <div class="shuffle" onclick="shufflePlaylist()">
+                        <i class="material-icons" style="font-size: 27px">
+                            shuffle
+                        </i>
+                    </div>
+                </div>
+                <div class="volume_container">
+                    <div class="volume" onclick="muteVolume()" style="margin-right: 10px">
+                        <i class="material-icons" style="font-size: 24px">volume_up</i>
+                    </div>
+                    <label>
+                        <input type="range" min="0" max="100" value="50" step="any"
+                               class="volume_slider" onchange="setVolume()">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="music_player.js"></script>
+</body>
+</html>
